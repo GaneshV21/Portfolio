@@ -1,5 +1,3 @@
-import React from "react";
-
 function Navbar() {
   return (
     <>
@@ -15,7 +13,7 @@ function Navbar() {
           <p className="text-lg cursor-pointer text-white mx-2">Contact</p>
         </div>
       </div>
-      <div className="h-[1px] bg-white w-full" />
+      <div className="h-0.5 bg-white w-full" />
     </>
   );
 }
