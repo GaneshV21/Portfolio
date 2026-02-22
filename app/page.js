@@ -10,8 +10,8 @@ export default function Home() {
       <Navbar />
       <Profile />
       <About />
-      <Projects />
-      <Contact />
+      {/*<Projects />
+      <Contact /> */}
     </div>
   );
 }
