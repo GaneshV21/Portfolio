@@ -12,7 +12,7 @@ let data = [
     github: "https://github.com/GaneshV21/Blog-Website-nextJs",
     image: Blog,
     description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "A full-stack blog application built using Next.js and MongoDB, enabling users to create, read, update, and delete blog posts. Designed with a clean UI and optimized performance, it demonstrates complete CRUD functionality with efficient data handling.",
     technicalStack: ["Next.js", "Tailwind CSS", "MongoDB"],
   },
   {
@@ -21,7 +21,7 @@ let data = [
     github: "https://github.com/GaneshV21/User-Management",
     image: userManagement,
     description:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "A user management system with authentication and authorization features, including signup and login functionality. Built using React, Node.js, Express, and MongoDB, it supports creating, updating, and deleting users, with Redux for state management and secure logout handling.",
     technicalStack: ["React", "Node.js", "Express", "MongoDB"],
   },
 ];
@@ -56,7 +56,7 @@ function Projects() {
                   ))}
                 </div>
                 <Link href={project.github} target="_blank">
-                  <FaGithub size={20} color={"#101411"}/>
+                  <FaGithub size={20} color={"#101411"} />
                 </Link>
               </div>
             </div>
