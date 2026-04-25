@@ -1,17 +1,25 @@
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
-import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
-    <div className="bg-black">
+    <div>
       <Navbar />
       <Profile />
-      <About />
-      {/*<Projects />
-      <Contact /> */}
+      <div className="bg-[#EDF7FA]">
+        <Education />
+      </div>
+      <Experience />
+      <div className="bg-[#EDF7FA]">
+        <Skills />
+      </div>
+      <Projects />
+      <Contact/>
     </div>
   );
 }

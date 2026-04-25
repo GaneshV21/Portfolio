@@ -1,31 +1,32 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <>
-      <div className="flex justify-between p-3 mx-5 ">
-        <div>
-          <p className="text-2xl cursor-pointer text-white font-semibol mx-2">
-            LOGO
-          </p>
-        </div>
-
+      <div className="flex justify-end p-3 mx-5 ">
         {isNavOpen ? (
           <div className="flex flex-col justify-between md:hidden gap-5">
             <div className="flex gap-3 items-center">
-              <p className="text-lg cursor-pointer text-gray-400 mx-2">About</p>
+              <Link href="#experience">
+                <p className="text-lg cursor-pointer mx-2 font-medium">Work</p>
+              </Link>
               <IoIosArrowDown
                 size={24}
                 className="text-gray-400"
                 onClick={() => setIsNavOpen(false)}
               />
             </div>
-            <p className="text-lg cursor-pointer text-gray-400 mx-2">
-              Projects
-            </p>
-            <p className="text-lg cursor-pointer text-gray-400 mx-2">Contact</p>
+            <Link href="#projects">
+              <p className="text-lg cursor-pointer font-medium mx-2">
+                Projects
+              </p>
+            </Link>
+            <Link href="#contact">
+              <p className="text-lg cursor-pointer font-medium mx-2">Contact</p>
+            </Link>
           </div>
         ) : (
           <IoMdMenu
@@ -36,12 +37,19 @@ function Navbar() {
         )}
 
         <div className="hidden md:flex justify-between gap-5">
-          <p className="text-lg cursor-pointer text-gray-400 mx-2">About</p>
-          <p className="text-lg cursor-pointer text-gray-400 mx-2">Projects</p>
-          <p className="text-lg cursor-pointer text-gray-400 mx-2">Contact</p>
+          <Link href="#experience">
+            <p className="text-lg cursor-pointer font-medium mx-2">Work</p>
+          </Link>
+
+          <Link href="#projects">
+            <p className="text-lg cursor-pointer font-medium mx-2">Projects</p>
+          </Link>
+
+          <Link href="#contact">
+            <p className="text-lg cursor-pointer font-medium mx-2">Contact</p>
+          </Link>
         </div>
       </div>
-      <div className="h-1 border border-t-gray-400"></div>
     </>
   );
 }
