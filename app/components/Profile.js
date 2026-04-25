@@ -16,14 +16,18 @@ function Profile() {
         </div>
 
         <Typography className="text-gray-400 text-lg! md:text-xl!">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          Software Engineer with 3 years of experience building scalable
+          full-stack and cloud-based applications. Skilled in Node.js, React,
+          Next.js, and modern UI frameworks to develop high-performance web
+          solutions. Passionate about clean design, performance optimization,
+          and delivering reliable end-to-end systems.
         </Typography>
 
-        <Button className="bg-[#FF6464]! text-white! text-lg! md:text-xl! w-full md:w-[35%] p-5!">
-          Download Resume
-        </Button>
+        <a href="/Ganesh_Resume.pdf" download>
+          <Button className="bg-[#FF6464]! text-white! text-lg! md:text-xl! w-full md:w-[35%] p-5! hover:border-white!">
+            Download Resume
+          </Button>
+        </a>
       </div>
       <div className="w-full md:w-[45%] flex justify-center">
         <div className="w-70 h-70 rounded-full overflow-hidden border-2 border-gray-300">
