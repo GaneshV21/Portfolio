@@ -32,7 +32,10 @@ function Projects() {
       <h2 className="text-2xl font-bold mb-4">Projects</h2>
       <div className="flex flex-col gap-10">
         {data.map((project, index) => (
-          <div className="flex gap-10 items-center" key={index}>
+          <div
+            className="flex flex-col md:flex-row gap-10 items-center"
+            key={index}
+          >
             <Link href={project?.link} target="_blank">
               <div className="w-100 cursor-pointer">
                 <Image src={project.image} alt={project.title} />
