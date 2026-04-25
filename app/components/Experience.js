@@ -1,5 +1,5 @@
 "use client";
-import { Timeline, Card } from "antd";
+import { Card } from "antd";
 
 function Experience() {
   return (
