@@ -84,7 +84,7 @@ let data = [
 function Skills() {
   return (
     <div className="container mx-auto p-5 md:p-10 ">
-      <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">Skills</h2>
+      <h2 className="text-2xl font-bold mb-4 text-black">Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
         {data.map((skill, index) => (
           <div key={index} className="flex flex-col items-center">
