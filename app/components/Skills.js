@@ -89,7 +89,7 @@ function Skills() {
         {data.map((skill, index) => (
           <div key={index} className="flex flex-col items-center">
             {skill.icon}
-            <span className="mt-2 text-sm font-medium">{skill.title}</span>
+            <span className="mt-2 text-sm font-medium text-black">{skill.title}</span>
           </div>
         ))}
       </div>
