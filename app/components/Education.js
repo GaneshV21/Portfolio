@@ -20,14 +20,14 @@ let data = [
 function Education() {
   return (
     <div className="container mx-auto p-5 md:p-10">
-      <h2 className="text-2xl font-bold mb-4">Education</h2>
+      <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">Education</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {data.map((item, index) => (
           <div
             key={index}
             className="bg-white p-5 rounded-lg shadow flex flex-col gap-2"
           >
-            <h3 className="text-xl font-semibold">{item.title}</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white">{item.title}</h3>
             <p className="text-gray-600">{item.description}</p>
             <p className="text-lg font-bold text-blue-500">{item.percentage}</p>
           </div>

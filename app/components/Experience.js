@@ -4,7 +4,7 @@ import { Card } from "antd";
 function Experience() {
   return (
     <div className="container mx-auto p-5 md:p-10" id="experience">
-      <h2 className="text-2xl font-bold mb-4">Experience</h2>
+      <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">Experience</h2>
 
       <div className="w-full">
         <div className="flex gap-6">

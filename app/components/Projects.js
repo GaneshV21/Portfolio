@@ -29,7 +29,9 @@ let data = [
 function Projects() {
   return (
     <div className="container mx-auto p-5 md:p-10" id="projects">
-      <h2 className="text-2xl font-bold mb-4">Projects</h2>
+      <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">
+        Projects
+      </h2>
       <div className="flex flex-col gap-10">
         {data.map((project, index) => (
           <div
@@ -43,7 +45,7 @@ function Projects() {
             </Link>
 
             <div className="flex flex-col gap-2">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-black dark:text-white">{project.title}</h3>
               <p className="text-gray-600 dark:text-gray-400">
                 {project.description}
               </p>
