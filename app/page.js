@@ -8,7 +8,7 @@ import Experience from "./components/Experience";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
       <Profile />
       <div className="bg-[#EDF7FA]">
@@ -19,7 +19,7 @@ export default function Home() {
         <Skills />
       </div>
       <Projects />
-      <Contact/>
+      <Contact />
     </div>
   );
 }
