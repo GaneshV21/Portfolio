@@ -13,7 +13,7 @@ let data = [
     image: Blog,
     description:
       "A full-stack blog application built using Next.js and MongoDB, enabling users to create, read, update, and delete blog posts. Designed with a clean UI and optimized performance, it demonstrates complete CRUD functionality with efficient data handling.",
-    technicalStack: ["Next.js", "Tailwind CSS", "MongoDB"],
+    technicalStack: ["Next.js", "Tailwind CSS", "MongoDB", "AntDesign"],
   },
   {
     title: "User Management System",
@@ -22,7 +22,7 @@ let data = [
     image: userManagement,
     description:
       "A user management system with authentication and authorization features, including signup and login functionality. Built using React, Node.js, Express, and MongoDB, it supports creating, updating, and deleting users, with Redux for state management and secure logout handling.",
-    technicalStack: ["React", "Node.js", "Express", "MongoDB"],
+    technicalStack: ["React", "Node.js", "Express", "MongoDB", "AntDesign"],
   },
 ];
 
@@ -30,31 +30,31 @@ function Projects() {
   return (
     <div className="container mx-auto p-5 md:p-10" id="projects">
       <h2 className="text-2xl font-bold mb-4 text-black">Projects</h2>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 m-2">
         {data.map((project, index) => (
           <div
             className="flex flex-col md:flex-row gap-10 items-center"
             key={index}
           >
             <Link href={project?.link} target="_blank">
-              <div className="w-100 cursor-pointer">
+              <div className="w-90 md:w-100 cursor-pointer">
                 <Image src={project.image} alt={project.title} />
               </div>
             </Link>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 m-2">
               <h3 className="text-xl font-bold mb-2 text-black">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-sm md:text-lg text-gray-600 dark:text-gray-400">
                 {project.description}
               </p>
-              <div className="flex justify-between items-center">
-                <div className="flex gap-3">
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+                <div className="grid grid-cols-4 md:flex gap-3">
                   {project.technicalStack.map((tech, techIndex) => (
                     <p
                       key={techIndex}
-                      className="text-gray-800 border border-gray-200 bg-gray-300 font-semibold p-2 rounded-xl"
+                      className="text-[10px] md:text-lg text-gray-800 border border-gray-200 bg-gray-300 font-semibold p-2 rounded-xl"
                     >
                       {tech}
                     </p>
