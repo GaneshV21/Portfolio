@@ -11,7 +11,9 @@ function Navbar() {
           <div className="flex flex-col justify-between md:hidden gap-5">
             <div className="flex gap-3 items-center">
               <Link href="#experience">
-                <p className="text-lg cursor-pointer mx-2 font-medium">Work</p>
+                <p className="text-lg cursor-pointer mx-2 font-medium text-black">
+                  Work
+                </p>
               </Link>
               <IoIosArrowDown
                 size={24}
@@ -20,12 +22,14 @@ function Navbar() {
               />
             </div>
             <Link href="#projects">
-              <p className="text-lg cursor-pointer font-medium mx-2">
+              <p className="text-lg cursor-pointer font-medium mx-2 text-black">
                 Projects
               </p>
             </Link>
             <Link href="#contact">
-              <p className="text-lg cursor-pointer font-medium mx-2">Contact</p>
+              <p className="text-lg cursor-pointer font-medium mx-2 text-black">
+                Contact
+              </p>
             </Link>
           </div>
         ) : (
@@ -38,15 +42,21 @@ function Navbar() {
 
         <div className="hidden md:flex justify-between gap-5">
           <Link href="#experience">
-            <p className="text-lg cursor-pointer font-medium mx-2">Work</p>
+            <p className="text-lg cursor-pointer font-medium mx-2 text-black">
+              Work
+            </p>
           </Link>
 
           <Link href="#projects">
-            <p className="text-lg cursor-pointer font-medium mx-2">Projects</p>
+            <p className="text-lg cursor-pointer font-medium mx-2 text-black">
+              Projects
+            </p>
           </Link>
 
           <Link href="#contact">
-            <p className="text-lg cursor-pointer font-medium mx-2">Contact</p>
+            <p className="text-lg cursor-pointer font-medium mx-2 text-black">
+              Contact
+            </p>
           </Link>
         </div>
       </div>
