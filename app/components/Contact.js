@@ -10,7 +10,7 @@ function Contact() {
       className="flex flex-col justify-center items-center gap-2 p-5 md:p-10"
       id="contact"
     >
-      <div className="flex gap-5 text-black dark:text-white">
+      <div className="flex gap-5 text-black">
         <Link href="#">
           <FaFacebookSquare size={30} />
         </Link>
@@ -24,9 +24,7 @@ function Contact() {
           <FaLinkedin size={30} />
         </Link>
       </div>
-      <p className="text-black dark:text-white">
-        Copyright ©2026 All rights reserved
-      </p>
+      <p className="text-black">Copyright ©2026 All rights reserved</p>
     </div>
   );
 }
